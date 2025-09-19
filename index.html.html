@@ -1,0 +1,98 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vivethashree K — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Vivethashree K</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Hi, I'm <span class="accent">Vivethashree</span></h2>
+          <p>Second-year CSE student. I build front-end projects and learn algorithms. Open to internships and collaborations.</p>
+          <p class="cta-row">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="link-btn" href="#contact">Get in touch</a>
+          </p>
+        </div>
+        <img class="hero-photo" src="https://via.placeholder.com/220" alt="profile photo" />
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About</h3>
+      <p>I study Computer Science and Engineering at SA Engineering College. I enjoy web development, competitive programming, and preparing for government exams.</p>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Selected Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Online Transaction System</h4>
+          <p>Mini project built with HTML, CSS & JavaScript.</p>
+          <p class="card-links"><a href="#">Live</a> · <a href="#">Code</a></p>
+        </article>
+
+        <article class="card">
+          <h4>DSA Practice Tracker</h4>
+          <p>A simple tracker to plan daily DSA problems and progress.</p>
+          <p class="card-links"><a href="#">Live</a> · <a href="#">Code</a></p>
+        </article>
+
+        <article class="card">
+          <h4>Design Portfolio</h4>
+          <p>A clean responsive portfolio to showcase UI work.</p>
+          <p class="card-links"><a href="#">Live</a> · <a href="#">Code</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>Want to collaborate or have a question? Email me at <a href="mailto:vivethashree2314@gmail.com">vivethashree2314@gmail.com</a>.</p>
+      <form class="contact-form" onsubmit="alert('This form is an example — replace with a real backend.') ; return false;">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" rows="4" placeholder="Message"></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Vivethashree K — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
